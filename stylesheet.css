@@ -426,7 +426,7 @@ th {
   padding: 0;
 }
 
-/* CSS start here */
+/* My Body Styling starts here */
 
 
 
@@ -437,6 +437,8 @@ body {
 	font-family: "quicksand", Century Gothic, Arial, sans-serif;
 	color: #2c3e50;
 }
+
+/* Font styling */
 
 @font-face {
 font-family: "Cabin";
@@ -463,8 +465,10 @@ src: url("fonts/FFF-Tusj/FFF_Tusj.ttf") format("truetype");
 	width: 100%;
 }
 
+/* Top Nav Panel */
+
 header {
-	background-color: #575757;
+	background-color: #000000;
 	width: 100%;
 	height:100px;
 }
@@ -530,16 +534,15 @@ header .container {
 	.navigation li{
 		display: inline-block;
 		margin: 0px 10px 0px 15px;
-		float: right;
 		vertical-align: middle;
 	}
 
 	.navigation a {
 		text-decoration: none;
 		color: white;
-		-webkit-box-shadow: inset 0 0 30px 15px #575757;
-    	-moz-box-shadow: inset 0 0 30px 15px #575757;
-    	box-shadow: inset 0 0 30px 15px #575757;
+		-webkit-box-shadow: inset 0 0 30px 15px #000000;
+    	-moz-box-shadow: inset 0 0 30px 15px #000000;
+    	box-shadow: inset 0 0 30px 15px #000000;
 
     	-webkit-transition: color 500ms linear 0s;
 	    -moz-transition: color 500ms linear 0s;
@@ -553,17 +556,26 @@ header .container {
 		background-color: white;
 
 	}
+	
+/* Introduction to Page Style */
 
 #introduction {
 	width: 100%;
-	height: auto;
-	padding: 75px 0px 75px 0px;
+	height: 420px;
 	clear: both;
 	text-align: center;
 	position: relative;
-	background-color: #2980b9;
-	color: 
+	background-color: #0c2030;
+	background-image: url("images/Citybackground.png");
+  	background-repeat:no-repeat;
+	background-position: center center;
+	color: #ffffff;
+	 
 }
+
+#introduction .container {
+	background-image: url("images/Citybackground.png");
+	}
 
 #introduction img {
 	position: absolute;
@@ -577,6 +589,8 @@ header .container {
 	-webkit-animation: cloudanimation 40s linear infinite;
 	-moz-animation: cloudanimation 40s linear infinite;
 	-o-animation: cloudanimation 40s linear infinite;
+	-ms-animation: cloudanimation 40s linear infinite;
+	
 
 }
 
@@ -587,6 +601,9 @@ header .container {
 	-webkit-animation: cloudanimation 30s linear infinite;
 	-moz-animation: cloudanimation 30s linear infinite;
 	-o-animation: cloudanimation 30s linear infinite;
+	-ms-animation: cloudanimation 40s linear infinite;
+	
+	
 
 }
 
@@ -597,6 +614,8 @@ header .container {
 	-webkit-animation: cloudanimation 25s linear infinite;
 	-moz-animation: cloudanimation 25s linear infinite;
 	-o-animation: cloudanimation 25s linear infinite;
+	-ms-animation: cloudanimation 40s linear infinite;
+	
 
 }
 
@@ -607,6 +626,8 @@ header .container {
 	-webkit-animation: cloudanimation 35s linear infinite;
 	-moz-animation: cloudanimation 35s linear infinite;
 	-o-animation: cloudanimation 35s linear infinite;
+	-ms-animation: cloudanimation 40s linear infinite;
+	
 }
 
 @-webkit-keyframes cloudanimation {
@@ -622,16 +643,27 @@ header .container {
 	100% {margin-left: 0%;}
 }
 
+@-ms-keyframes cloudanimation {
+	0% {margin-left: 85%;}
+	100% {margin-left: 0%;}
+}
+
+
+
 #introduction h1 {
 	font: 72px "FFF_Tusj", arial, sans-serif;
 	z-index: 3;
 	position: relative;
+	margin: 0;
+	padding-top: 120px;
 }
 
-#itroduction h1, h2, h4 {
+#introduction h1, #introduction h2, #introduction h4 {
 	z-index: 2;
 	position: relative;
 }
+
+/* Work Examples Styling */
 
 #portfolio {
 	width: 100%;
@@ -668,8 +700,8 @@ header .container {
 		font: 46px "FFF_Tusj", arial, sans-serif;
 		text-align: left;
 	}
-
-	/*Thanks to Ian Lunn for hover.css base */
+	
+		/*Thanks to Ian Lunn for hover.css base */
 
 		.outline-inward {
 			  display: inline-block;
@@ -829,10 +861,13 @@ header .container {
   animation-direction: alternate;
 }
 
+/* End of Hover Shadow */
 
 .hide {
 	display: none;
 }
+
+/* Portfolio Description Style */
 
 .smallContainer {
 	max-width: 800px;
@@ -858,6 +893,8 @@ header .container {
 	font-weight: bold;
 }
 
+/* About Me Style */
+
 #about {
 	padding: 25px 0px 25px 0px;
 	width: 100%;
@@ -866,6 +903,11 @@ header .container {
 	clear: both;
 
 }
+
+	#about_me span {
+		color: white;
+		font-weight: bold;
+	}
 
 	#about_me_img {
 		width: 200px;
@@ -909,6 +951,8 @@ header .container {
 .float_right {
 	float: right;
 }
+
+/* Contact Section Style */
 
 #contactsection {
 	width: 100%;
@@ -1031,7 +1075,7 @@ box-shadow:none;
 -webkit-box-shadow:none;
 }
 form input[type="text"][disabled], form textarea[disabled] {
-background:#fff
+background:#fff;
 }
 form input[type="text"].error, form textarea.error {
 background:#e6e6e6;
@@ -1064,12 +1108,12 @@ input.valid, textarea.valid{
     border: 2px solid green;
 }
 
-/*End*/
+/* Footer Style */
 
 
 
 footer {
-	background-color: #575757;
+	background-color: #000000;
 	width: 100%;
 	height: 75px;
 }
@@ -1112,9 +1156,9 @@ footer .container {
 		.footer_navigation a {
 		text-decoration: none;
 		color: white;
-		-webkit-box-shadow: inset 0 0 30px 15px #575757;
-    	-moz-box-shadow: inset 0 0 30px 15px #575757;
-    	box-shadow: inset 0 0 30px 15px #575757;
+		-webkit-box-shadow: inset 0 0 30px 15px #000000;
+    	-moz-box-shadow: inset 0 0 30px 15px #000000;
+    	box-shadow: inset 0 0 30px 15px #000000;
 
     	-webkit-transition: color 500ms linear 0s;
 	    -moz-transition: color 500ms linear 0s;
@@ -1210,15 +1254,17 @@ footer .container {
 	.logo_text {
 		display: none;
 	}
-
+	
 	.smallContainer, .container, #introduction {
-		min-width: 500px;
+	min-width: 500px;
 	}
-
+	
 	header, footer, section {
 		width: 100%;
 	}
-
+	
+	
+	
 
 }
 

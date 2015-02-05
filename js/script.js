@@ -1,17 +1,18 @@
 $(document).ready(function() {
     $('.clickImg').click(function(e) {
-		var div = $($(this).data("show")).slideToggle('slow');
+        var div = $($(this).data("show")).slideToggle('slow');
    div.siblings("div").slideUp('slow');
-	});
+    });
 
-	$('a').click(function(){
+    $('a').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
     }, 700);
     return false;
-	});
-
-	// For validation - Thanks to ContactMetrics
+    });
+    
+    
+// For validation - Thanks to ContactMetrics
 
     $('#contact_name').on('input', function() {
         var input=$(this);
@@ -50,32 +51,31 @@ $(document).ready(function() {
         event.preventDefault();
     }
     else{
-		$('form').submit(function(event) {
-        	var formData = {
-			'name' 				: $('input[name=name]').val(),
-			'email' 			: $('input[name=email]').val(),
-			'message' 	: $('textarea[name=message]').val()
-		};
-
-			$.ajax({
-			type 		: 'POST', // define the type of HTTP verb we want to use (POST for our form)
-			url 		: 'contact.php', // the url where we want to POST
-			data 		: formData, // our data object
-			dataType 	: 'json', // what type of data do we expect back from the server
-            encode          : true
-            success: function(){
-            alert("success");
-            $("#result").html('Submitted successfully');
-        	}
-		})
-
-
-
-
-
+        
+        alert("Thank you for submitting!");
+        
+        
     }
     });
+    
+    
+    $('#contact').submit(function(event) {
+            var formData = {
+            'name'              : $('input[name=name]').val(),
+            'email'             : $('input[name=email]').val(),
+            'message'   : $('textarea[name=message]').val()
+        };
 
+            $.ajax({
+            type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
+            url         : 'contact.php', // the url where we want to POST
+            data        : formData, // our data object
+            dataType    : 'json', // what type of data do we expect back from the server
+                    encode          : true
+        })
+        event.preventDefault();
+        
+    });
 
 });
 
