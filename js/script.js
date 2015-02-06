@@ -1,8 +1,8 @@
 $(document).ready(function() {
-    $('.clickImg').click(function(e) {
-        var div = $($(this).data("show")).slideToggle('slow');
-   div.siblings("div").slideUp('slow');
-    });
+    // $('.clickImg').click(function(e) {
+    //     var div = $($(this).data("show")).slideToggle('slow');
+    //     div.siblings("div").slideUp('slow');
+    // });
 
     $('a').click(function(){
     $('html, body').animate({
@@ -10,6 +10,17 @@ $(document).ready(function() {
     }, 700);
     return false;
     });
+
+    $('.clickImg').click(function(e) {
+        var div = $($(this).data("show")).fadeToggle('slow');
+        div.css("top", document.body.scrollTop);
+        div.siblings("div").fadeOut();
+    });
+
+    $('.close-img').click(function(){
+        $(this).parent().fadeOut();
+    })
+
     
     
 // For validation - Thanks to ContactMetrics
