@@ -890,7 +890,7 @@ header .container {
 	padding: 20px;
 	left: 10%;
 	display: none;
-	width: 80%;
+	width: 76%;
 	background-color: white;
 	border: 2px solid black;
 	border-radius: 10px;
@@ -1245,6 +1245,7 @@ footer .container {
 	#portfolio .container {
 		max-width: 501px;
 		margin-left: auto;
+		padding-left: 10px;
 	}
 
 	.smallContainer {
