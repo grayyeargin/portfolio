@@ -2,7 +2,8 @@
 <html class="no-js" lang="en">
 <head>
 	<title>Gray Yeargin | Web Developer | Brooklyn, NY</title>
-	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
 	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
 	<script type="text/javascript" src="js/jquery.contact.min.js"></script>
 	<script src="http://malsup.github.com/jquery.form.js"></script>
@@ -52,8 +53,8 @@
 				<div class="container">
 					<hgroup>
 						<h1>Gray Yeargin</h1>
-						<h2>Brooklyn, NY</h2>
-						<h4>Moving pixels since 2010</h4>
+						<h3>Web Developer | Outdoor Enthusiast</h3>
+						<h3>Brooklyn, NY</h3>
 					</hgroup>
 				</div>
 			</div>
@@ -74,6 +75,30 @@
 						</div>
 						<h3>MusicMap</h3>
 					</div>
+					<div class="example_window clickImg" data-show="#description5">
+						<div class="outline-inward">
+							<img alt="MusicMap" src="images/YPSconst.png"/>
+						</div>
+						<h3>YPS Construction, Inc.</h3>
+					</div>
+					<div class="example_window_omega clickImg zero_margin" data-show="#description8">
+						<div class="outline-inward">
+							<img alt="MusicMap" src="images/spicoli.png"/>
+						</div>
+						<h3>Spicoli's</h3>
+					</div>
+					<div class="example_window clickImg" data-show="#description7">
+						<div class="outline-inward">
+							<img alt="MusicMap" src="images/chain-reaction.png"/>
+						</div>
+						<h3>Chain Reaction</h3>
+					</div>
+					<div class="example_window clickImg zero_margin" data-show="#description6">
+						<div class="outline-inward">
+							<img alt="MusicMap" src="images/WNature.png"/>
+						</div>
+						<h3>Wounded Nature</h3>
+					</div>
 					<div class="example_window clickImg" data-show="#description3">
 						<div class="outline-inward">
 							<img alt="E-mail Marketing" src="images/mailtemplates.png"/>
@@ -86,30 +111,6 @@
 						</div>
 						<h3>Grayyeargin.com</h3>
 					</div>
-					<div class="example_window clickImg" data-show="#description5">
-						<div class="outline-inward">
-							<img alt="MusicMap" src="images/YPSconst.png"/>
-						</div>
-						<h3>YPS Construction, Inc.</h3>
-					</div>
-					<div class="example_window clickImg zero_margin" data-show="#description6">
-						<div class="outline-inward">
-							<img alt="MusicMap" src="images/WNature.png"/>
-						</div>
-						<h3>Wounded Nature</h3>
-					</div>
-					<div class="example_window clickImg" data-show="#description7">
-						<div class="outline-inward">
-							<img alt="MusicMap" src="images/chain-reaction.png"/>
-						</div>
-						<h3>Chain Reaction</h3>
-					</div>
-					<div class="example_window_omega clickImg zero_margin" data-show="#description8">
-						<div class="outline-inward">
-							<img alt="MusicMap" src="images/spicoli.png"/>
-						</div>
-						<h3>Spicoli's</h3>
-					</div>
 				</div>
 			</div>
 		</section>
@@ -117,9 +118,10 @@
 			<div class="smallContainer">
 				<div class="work-description" id="description1" class="hide">
 					<h2>Brewfinder</h2>
-					<p class="attention">Website:&nbsp;&nbsp;&nbsp;<a href="http://104.131.196.188/" target="_blank">Brewfinder</a><br>
-					Role:&nbsp;&nbsp;&nbsp;Web Developer</p>
-					<p>In producing Brewfinder I created a RESTful API using Ruby on Rails and PostgreSQL to serve the client-side with customized JSON responses. The client-side is a one page application using Backbone.js to create an MVC structure, rendering templates for each route. D3.js is used to produce a map and pie chart for query purposes.</p>
+					<a href="http://104.131.196.188/" target="_blank"><img class="icon-links" src="images/icons/earth94.svg" alt="Website"></a>
+					<a href="https://github.com/grayyeargin/Brewfinder-clientside"><img class="icon-links" src="images/icons/github5.svg" alt="Github"></a>
+					<p class="attention">Role:&nbsp;&nbsp;&nbsp;Web Developer, Design</p>
+					<p>In producing Brewfinder I created a RESTful API using Ruby on Rails and PostgreSQL to serve the client-side with customized JSON responses. The client-side is a one page application using Backbone.js to create an MVC structure, rendering templates for each route. D3.js is used to produce a map for looking up breweries by state, and bar and pie charts for beer statistics.</p>
 					<h3>Skills Utilized</h3>
 					<ul>
 						<li>Ruby on Rails</li>
@@ -130,15 +132,16 @@
 						<li>CSS3</li>
 						<li>jQuery</li>
 						<li>Underscore.js</li>
-						<li>Photoshop</li>
+						<li>Adobe Photoshop</li>
 						<li>API Creation</li>
 					</ul>
 					<img class="close-img" src="images/close.png" alt="">
 				</div>
 				<div class="work-description" id="description2"class="hide">
 					<h2>MusicMap</h2>
-					<p class="attention">Website:&nbsp;&nbsp;&nbsp;<a href="https://secret-spire-1033.herokuapp.com/" target="_blank">MusicMap</a><br>
-					Role:&nbsp;&nbsp;&nbsp;Web Developer</p>
+					<a href="https://secret-spire-1033.herokuapp.com/" target="_blank"><img class="icon-links" src="images/icons/earth94.svg" alt="Website"></a>
+					<a href="https://github.com/grayyeargin/Disc-ovr" target="_blank"><img class="icon-links" src="images/icons/github5.svg" alt="Github"></a>
+					<p>Role:&nbsp;&nbsp;&nbsp;Web Developer</p>
 					<p>MusicMap is a web application designed to aggregate information on musical artist's to give the user more information in one search. To do this my team and I consumed multiple 3rd party API's and directed them to one page for each queried artist. This query would produce a page with relevant Twitter, Spotify, lastFM, and Reddit information on the artist. Bootstrap is utilized for page styling with jQuery effects on the album transitions on the home page.</p>
 					<h3>Skills Utilized</h3>
 					<ul>
@@ -155,14 +158,14 @@
 					<h2>E-Mail Templates</h2>
 					<p class="attention">
 						Templates:&nbsp;&nbsp;&nbsp;<a href="http://www.grayyeargin.com/WNnewsletter.html" target="_blank">Wounded Nature Example</a>&nbsp;&nbsp;&nbsp;<a href="http://www.grayyeargin.com/YPSnewsletter.html" target="_blank">YPS Construction Example</a><br>
-						Role:&nbsp;&nbsp;&nbsp;E-mail Marketing</p>
-					<p>In an effort to reach out to more potential clients and supporters, an e-mail marketing campaign was implemented at both YPS Construction and Wounded Nature. I designed and developed e-mail templates for each respective company as well as distributed the finished product using an e-mail marketing service provider.</p>
+						Role:&nbsp;&nbsp;&nbsp;E-mail Template Development</p>
+					<p>In an effort to reach out to more potential clients and supporters, an e-mail marketing campaign was implemented at both YPS Construction and Wounded Nature. I designed and developed e-mail templates using Adobe Photoshop to edit images and with HTML and inline CSS styling to develop a responsize e-mail template.</p>
 					<h3>Skills Utilized</h3>
 					<ul>
 						<li>HTML</li>
 						<li>CSS</li>
+						<li>Responsive Design</li>
 						<li>E-mail Template Development</li>
-						<li>Newsletter Delivery</li>
 						<li>Photoshop</li>
 						<li>Content Editing</li>
 					</ul>
@@ -170,10 +173,9 @@
 				</div>
 				<div class="work-description" id="description4" class="hide">
 					<h2>Grayyeargin.com</h2>
-					<p class="attention">Website:&nbsp;&nbsp;&nbsp;<a href="#">grayyeargin.com</a><br>
-						Role:&nbsp;&nbsp;&nbsp;Web Development, Design</p>
+					<p class="attention">Role:&nbsp;&nbsp;&nbsp;Web Development, Design</p>
 					<p>In desinging and developing grayyeargin.com I wanted the site to represent my knowledge and passion of Web Development in addition to displaying my past work experiences. This would include using semantic HTML5 markup, new CSS3 features to lighten the Javascript load, and a responsive design with a fluid layout.</p>
-					<p>The sun logo was created in Adobe Illustrator while utilizing Adobe Photoshop for photo editing. Media queries and a fluid layout were employed to ensure proper viewing on variable screen sizes.</p>
+					<p>The logo was created in Adobe Illustrator while utilizing Adobe Photoshop for photo editing. Media queries and a fluid layout were employed to ensure proper viewing on variable screen sizes.</p>
 					<h3>Skills Utilized</h3>
 					<ul>
 						<li>HTML5</li>
@@ -189,48 +191,41 @@
 				</div>
 				<div class="work-description" id="description5" class="hide">
 					<h2>YPS Construction, Inc.</h2>
-					<p class="attention">Website:&nbsp;&nbsp;&nbsp;<a href="www.ypsconst.com">YPSconst.com</a><br>
-						Role:&nbsp;&nbsp;&nbsp;Content Manager</p>
-					<p>In desinging and developing grayyeargin.com I wanted the site to represent my knowledge and passion of Web Development in addition to displaying my past work experiences. This would include using semantic HTML5 markup, new CSS3 features to lighten the Javascript load, and a responsive design with a fluid layout.</p>
-					<p>The sun logo was created in Adobe Illustrator while utilizing Adobe Photoshop for photo editing. Media queries and a fluid layout were employed to ensure proper viewing on variable screen sizes.</p>
+					<a href="http://www.ypsconst.com" target="_blank"><img class="icon-links" src="images/icons/earth94.svg" alt="Website"></a>
+					<p>Role:&nbsp;&nbsp;&nbsp;Content Manager</p>
+					<p>As a content manager for the YPS Construction website I was in charge of creating and updating the content of the site. This included writing and editing content, creating and editing images in Adobe Photoshop, and developing and implementing an SEO strategy to drive more visitors to the site.</p>
 					<h3>Skills Utilized</h3>
 					<ul>
-						<li>HTML5</li>
-						<li>CSS3</li>
-						<li>Responsive Design</li>
-						<li>Jquery</li>
-						<li>PHP</li>
 						<li>Adobe Photoshop</li>
-						<li>Adobe Illustrator</li>
 						<li>Content Management</li>
+						<li>Search Engine Optimization</li>
+						<li>HTML</li>
+						<li>CSS</li>
 					</ul>
 					<img class="close-img" src="images/close.png" alt="">
 				</div>
 				<div class="work-description" id="description6" class="hide">
 					<h2>Wounded Nature</h2>
-					<p class="attention">Website:&nbsp;&nbsp;&nbsp;<a href="www.woundednature.org">woundednature.org</a><br>
-						Role:&nbsp;&nbsp;&nbsp;Content Manager</p>
-					<p>In desinging and developing grayyeargin.com I wanted the site to represent my knowledge and passion of Web Development in addition to my past work experience as a Web Administrator and Digital Marketer. This would include using semantic HTML5 markup, new CSS3 features to lighten the Javascript load, and a responsive design with a fluid layout.</p>
-					<p>The sun logo was created in Adobe Illustrator while utilizing Adobe Photoshop for photo editing. Media queries and a fluid layout were employed to ensure proper viewing on variable screen sizes.</p>
+					<a href="http://www.woundednature.org" target="_blank"><img class="icon-links" src="images/icons/earth94.svg" alt="Website"></a>
+					<p>Role:&nbsp;&nbsp;&nbsp;Content Manager</p>
+					<p>Wounded Nature is an environmental non-profit looking to clean up our littered coastlines. I volunteered to help maintain and update their website and improve the SEO of the website and help bring more donations and attention the organization.</p>
 					<h3>Skills Utilized</h3>
 					<ul>
-						<li>HTML5</li>
-						<li>CSS3</li>
-						<li>Responsive Design</li>
-						<li>Jquery</li>
+						<li>HTML</li>
+						<li>CSS</li>
 						<li>PHP</li>
 						<li>Adobe Photoshop</li>
-						<li>Adobe Illustrator</li>
-						<li>Content Management</li>
+						<li>Search Engine Optimization</li>
+						<li>Wordpress Content Management</li>
 					</ul>
 					<img class="close-img" src="images/close.png" alt="">
 				</div>
 				<div class="work-description" id="description7" class="hide">
 					<h2>Chain Reaction</h2>
-					<p class="attention">Website:&nbsp;&nbsp;&nbsp;<a href="#">grayyeargin.com</a><br>
-						Github:&nbsp;&nbsp;&nbsp;<a href="https://github.com/grayyeargin/Chain-Reaction">github.com/grayyeargin/Chain-Reaction</a></br>
-						Role:&nbsp;&nbsp;&nbsp;Web Development, Design</p>
-					<p>A game developed using HTML5 Canvas draw the board and Javascript to animate and manage the state of the game. </p>
+					<a href="https://01656404e357bf975d5e4ee2471502a45eec8535-www.googledrive.com/host/0B-ho7YLwOquFTEZQVkI1WEtyOE0" target="_blank"><img class="icon-links" src="images/icons/earth94.svg" alt="Website"></a>
+					<a href="https://github.com/grayyeargin/Chain-Reaction" target="_blank"><img class="icon-links" src="images/icons/github5.svg" alt="Github"></a>
+					<p class="attention">Role:&nbsp;&nbsp;&nbsp;Web Development, Design</p>
+					<p>A game developed using HTML5 Canvas to draw the board and JavaScript to animate and manage the state of the game.</p>
 					<p>Eliminate enough balls and you are on to the next level. Each level increases in difficulty through a higher ratio of balls needed to be elimiated.</p>
 					<h3>Skills Utilized</h3>
 					<ul>
@@ -242,14 +237,16 @@
 				</div>
 				<div class="work-description" id="description8" class="hide">
 					<h2>Restaurant Manager</h2>
-					<p class="attention">Website:&nbsp;&nbsp;&nbsp;<a href="#">grayyeargin.com</a><br>
-						Role:&nbsp;&nbsp;&nbsp;Web Development, Design</p>
+					<a href="http://104.236.65.119:9000" target="_blank"><img class="icon-links" src="images/icons/earth94.svg" alt="Website"></a>
+					<a href="https://github.com/grayyeargin/restaurant_project" target="_blank"><img class="icon-links" src="images/icons/github5.svg" alt="Github"></a>
+					<p class="attention">Role:&nbsp;&nbsp;&nbsp;Web Development, Design</p>
 						<p>A Ruby application built with the Sinatra framework and a PostgreSQL database. The app is used to manage products and orders from a store. This example is built for a restaurant to keep track of menu items, orders, receipts, and table use.</p>
 						<h3>Skills Utilized</h3>
 						<ul>
 							<li>Ruby</li>
 							<li>Sinatra</li>
 							<li>Javascript</li>
+							<li>Responsive Design</li>
 							<li>PostgreSQL</li>
 							<li>jQuery</li>
 							<li>HTML</li>
@@ -265,8 +262,8 @@
 					<img alt="Photo of Me" src="images/myphoto.png" id="about_me_img">
 					<div id="about_me">
 						<h1>About Me</h1>
-						<p>Hi, my name is Gray and I am a <span>Web Developer</span> living in Brooklyn, NY. I built my first webpage on Angelfire when I was 12 and have since learned how to code for both the <span>client</span> and <span>server side of web applications</span>.</p>
-						<p>My experience includes creating complex web applications utilizing <span>JavaScript</span> frameworks/libraries/tools such as <span>Backbone.js</span>, <span>jQuery</span>, <span>D3.js</span>, and <span>Underscore.js</span>. I keep my <span>CSS</span> styling dry and organized with <span>Sass</span> and animate elements with <span>CSS3</span>. I have created several server side applications with <span>Ruby</span>, making use of frameworks such as <span>Ruby on Rails</span> and <span>Sinatra</span>. These applications have included <span>creating RESTful API's</span> with a <span>PostgreSQL</span> database and <span>consuming 3rd party API's</span>.</p> 
+						<p>Hi, my name is Gray and I am a <span>Web Developer</span> living in Brooklyn, NY. I built my first webpage on Angelfire when I was 12 and have since learned how to develop for both the <span>client</span> and <span>server side of web applications</span>.</p>
+						<p>My experience includes creating web applications utilizing <span>JavaScript</span> frameworks/libraries such as <span>Backbone.js</span>, <span>jQuery</span>, <span>D3.js</span>, and <span>Underscore.js</span>. I keep my <span>CSS</span> styling dry and organized with <span>Sass</span> and animate elements with <span>CSS3</span>. I have created several server side applications with <span>Ruby</span>, making use of frameworks such as <span>Ruby on Rails</span> and <span>Sinatra</span>. These applications have included <span>creating RESTful API's</span> with a <span>PostgreSQL</span> database and <span>consuming 3rd party API's</span>.</p> 
 
 						<p>In my spare time away from work I like to enjoy what the great outdoors has to offer, whether its hiking, kayaking, hitting some tennis balls, or just having a read at the beach. I also have a passion for music, photography, and horticulture.</p>   
 					</div>
@@ -316,6 +313,7 @@
 				<div id="socialmedia">
 					<a href="https://www.facebook.com/gray.yeargin" target="_blank"><img alt="Facebook" src="images/icons/facebookicon.png"></a>
 					<a href="https://www.linkedin.com/pub/gray-yeargin/24/368/79a" target="_blank"><img alt="Linkedin" src="images/icons/linkedinicon.png"></a>
+					<a href="https://github.com/grayyeargin" target="_blank"><img alt="Linkedin" src="images/icons/github6.svg"></a>
 				</div>
 			</div>
 		</footer>
